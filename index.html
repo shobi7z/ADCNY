@@ -154,7 +154,7 @@
 
         function convertCurrency() {
             const cnyValue = parseFloat(cnyInput.value) || 0;
-            const rawIQD = cnyValue / 6.91 * 1380;
+            const rawIQD = cnyValue / 6.91 * 1320;
             const iqdValue = Math.round(rawIQD / 500) * 500;
             
             resultDiv.textContent = new Intl.NumberFormat('ar-IQ').format(iqdValue) + ' دينار عراقي';
